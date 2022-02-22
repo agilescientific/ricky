@@ -1,0 +1,37 @@
+ricky package
+=============
+
+Submodules
+----------
+
+ricky.io module
+---------------
+
+.. automodule:: ricky.io
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ricky.wavelets module
+---------------------
+
+.. automodule:: ricky.wavelets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ricky.xarray module
+-------------------
+
+.. automodule:: ricky.xarray
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ricky
+   :members:
+   :undoc-members:
+   :show-inheritance:

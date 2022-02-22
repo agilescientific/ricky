@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="snowfake package" href="snowfake.html" /><link rel="prev" title="Snowfake: Gravner–Griffeath snowflakes" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="ricky package" href="ricky.html" /><link rel="prev" title="ricky: All the wavelets" href="index.html" />
 
     <link rel="shortcut icon" href="_static/favicon.ico"/><meta name="generator" content="sphinx-4.4.0, furo 2022.02.14.1"/>
-        <title>snowfake - snowfake documentation</title>
+        <title>ricky - ricky documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=a8f031f701c6af50c9919b48f173a5785af06fac" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=25ceb02ed1c46dc30f2321ff83e92799f69dfdb9" />
@@ -120,7 +120,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">snowfake  documentation</div></a>
+      <a href="index.html"><div class="brand">ricky  documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -140,11 +140,8 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
-  <div class="sidebar-logo-container">
-    <img class="sidebar-logo" src="_static/snowfake_logo.png" alt="Logo"/>
-  </div>
   
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
@@ -155,16 +152,20 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">User guide</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">snowfake</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">ricky</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="snowfake.html">snowfake package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ricky.html">ricky package</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Project links</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/agile-geoscience/snowfake">GitHub repository</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://agilescientific.com">Agile's website</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/ricky/">PyPI releases</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/agile-geoscience/ricky">Code in GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/agile-geoscience/ricky/issues">Issue tracker</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://code.agilescientific.com/community">Community guidelines</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://code.agilescientific.com">Agile's software</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.agilescientific.com">Agile's website</a></li>
 </ul>
 
 </div>
@@ -191,61 +192,34 @@
           </label>
         </div>
         <article role="main">
-          <section class="tex2jax_ignore mathjax_ignore" id="snowfake">
-<h1>snowfake<a class="headerlink" href="#snowfake" title="Permalink to this headline">#</a></h1>
-<p><a class="reference external" href="https://github.com/agile-geoscience/snowfake/actions/workflows/python-package.yml"><img alt="Python package" src="https://github.com/agile-geoscience/snowfake/actions/workflows/python-package.yml/badge.svg"/></a>
-<a class="reference external" href="https://github.com/agile-geoscience/snowfake/actions/workflows/sphinx_docs.yml"><img alt="Build docs" src="https://github.com/agile-geoscience/snowfake/actions/workflows/sphinx_docs.yml/badge.svg"/></a></p>
-<p><a class="reference external" href="https://pypi.org/project/snowfake//"><img alt="PyPI version" src="https://img.shields.io/pypi/v/snowfake.svg"/></a>
-<a class="reference external" href="https://pypi.org/project/snowfake//"><img alt="PyPI versions" src="https://img.shields.io/pypi/pyversions/snowfake.svg"/></a>
-<a class="reference external" href="https://pypi.org/project/snowfake/"><img alt="PyPI license" src="https://img.shields.io/pypi/l/snowfake.svg"/></a></p>
-<p>Make Gravner-Griffeath “snowfakes”! This code implements:</p>
-<blockquote>
-<div><p>Janko Gravner, David Griffeath (2008). Modeling snow crystal growth II: A mesoscopic lattice map with plausible dynamics. <em>Physica D: Nonlinear Phenomena</em> <strong>237</strong> (3), p 385-404. <a class="reference external" href="https://doi.org/10.1016/j.physd.2007.09.008">DOI: 10.1016/j.physd.2007.09.008</a>.</p>
-</div></blockquote>
-<p><img alt="Snowfakes" src="https://www.dropbox.com/s/8mquyaiumdiuwwf/snowfakes.png?raw=1"/></p>
+          <section class="tex2jax_ignore mathjax_ignore" id="ricky">
+<h1>ricky<a class="headerlink" href="#ricky" title="Permalink to this headline">#</a></h1>
+<p><a class="reference external" href="https://github.com/agile-geoscience/ricky/actions/workflows/python-package.yml"><img alt="Python package" src="https://github.com/agile-geoscience/ricky/actions/workflows/python-package.yml/badge.svg"/></a>
+<a class="reference external" href="https://github.com/agile-geoscience/ricky/actions/workflows/sphinx_docs.yml"><img alt="Build docs" src="https://github.com/agile-geoscience/ricky/actions/workflows/sphinx_docs.yml/badge.svg"/></a></p>
+<p><a class="reference external" href="https://pypi.org/project/ricky//"><img alt="PyPI version" src="https://img.shields.io/pypi/v/ricky.svg"/></a>
+<a class="reference external" href="https://pypi.org/project/ricky//"><img alt="PyPI versions" src="https://img.shields.io/pypi/pyversions/ricky.svg"/></a>
+<a class="reference external" href="https://pypi.org/project/ricky/"><img alt="PyPI license" src="https://img.shields.io/pypi/l/ricky.svg"/></a></p>
+<p>Popular, and unpopular, wavelets for seismic geophysics. All the wavelets!</p>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h2>
-<p>You can install this package with <code class="docutils literal notranslate"><span class="pre">pip</span></code> (be careful not to type “snowflake”):</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install snowfake
+<p>You can install this package with <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install ricky
 </pre></div>
 </div>
-<p>Installing <code class="docutils literal notranslate"><span class="pre">scikit-image</span></code> allows you to use a different affine transformation, but I haven’t figured out yet if it’s better or not.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install snowfake[skimage]
-</pre></div>
-</div>
+<p>Ricky depends on <code class="docutils literal notranslate"><span class="pre">xarray</span></code>.</p>
 </section>
 <section id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">#</a></h2>
-<p>Read <a class="reference external" href="https://code.agilescientific.com/snowfake">the documentation</a></p>
+<p>Read <a class="reference external" href="https://code.agilescientific.com/ricky">the documentation</a></p>
 </section>
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">#</a></h2>
-<p>You can produce a random snowfake with:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import snowfake
-s = snowfake.random()
+<p>You can produce a Ricker wavelet with:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import ricky
+w = ricky.ricker(duration=0.256, dt=0.002, f=25)
+w.plot()
 </pre></div>
 </div>
-<p>This code produces the crystal in Figure 5b of the Gravner &amp; Griffeath (2008):</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">snowfake</span> <span class="kn">import</span> <span class="n">Snowfake</span>
-
-<span class="n">params</span> <span class="o">=</span>  <span class="p">{</span>
-    <span class="s1">'ρ'</span><span class="p">:</span> <span class="mf">0.35</span><span class="p">,</span>  <span class="c1"># or 'rho': 0.35 if you prefer...</span>
-    <span class="s1">'β'</span><span class="p">:</span> <span class="mf">1.4</span><span class="p">,</span>
-    <span class="s1">'α'</span><span class="p">:</span> <span class="mf">0.001</span><span class="p">,</span>
-    <span class="s1">'θ'</span><span class="p">:</span> <span class="mf">0.015</span><span class="p">,</span>
-    <span class="s1">'κ'</span><span class="p">:</span> <span class="mf">0.05</span><span class="p">,</span>
-    <span class="s1">'μ'</span><span class="p">:</span> <span class="mf">0.015</span><span class="p">,</span>
-    <span class="s1">'γ'</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">,</span>
-    <span class="s1">'σ'</span><span class="p">:</span> <span class="mf">0.00005</span><span class="p">,</span>
-    <span class="s1">'random'</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-<span class="p">}</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">Snowfake</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">801</span><span class="p">,</span> <span class="o">**</span><span class="n">params</span><span class="p">)</span>
-<span class="n">s</span><span class="o">.</span><span class="n">grow</span><span class="p">()</span>
-<span class="n">s</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>The various physical parameter arrays are available as <code class="docutils literal notranslate"><span class="pre">s.a</span></code> (attachment flag), <code class="docutils literal notranslate"><span class="pre">s.b</span></code> (boundary mass), <code class="docutils literal notranslate"><span class="pre">s.c</span></code> (the crystal itself) and <code class="docutils literal notranslate"><span class="pre">s.d</span></code> (the vapour). The arrays exist on hexgrids; you can rectify them with, for example, <code class="docutils literal notranslate"><span class="pre">s.rectify('c')</span></code>.</p>
-<p>The parameter <code class="docutils literal notranslate"><span class="pre">σ</span></code> (note that you can also spell out <code class="docutils literal notranslate"><span class="pre">sigma</span></code> if you prefer) can be a 1D array with one sample per epoch. This will vary the vapour density <code class="docutils literal notranslate"><span class="pre">ρ</span></code> through <em>time</em>. The parameter <code class="docutils literal notranslate"><span class="pre">ρ</span></code> can be a 2D array of shape <code class="docutils literal notranslate"><span class="pre">(size,</span> <span class="pre">size)</span></code>; this will vary the initial vapour density through <em>space</em>.</p>
 </section>
 <section id="testing">
 <h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">#</a></h2>
@@ -256,12 +230,12 @@ s = snowfake.random()
 </section>
 <section id="building">
 <h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">#</a></h2>
-<p>This repo uses PEP 517-style packaging. <a class="reference external" href="https://setuptools.pypa.io/en/latest/build_meta.html">Read more about this</a> and <a class="reference external" href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">about Python packaging in general</a>.</p>
+<p>This repo uses PEP 518-style packaging. <a class="reference external" href="https://setuptools.pypa.io/en/latest/build_meta.html">Read more about this</a> and <a class="reference external" href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">about Python packaging in general</a>.</p>
 <p>Building the project requires <code class="docutils literal notranslate"><span class="pre">build</span></code>, so first:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install build
 </pre></div>
 </div>
-<p>Then to build <code class="docutils literal notranslate"><span class="pre">snowfake</span></code> locally:</p>
+<p>Then to build <code class="docutils literal notranslate"><span class="pre">ricky</span></code> locally:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python -m build
 </pre></div>
 </div>
@@ -282,12 +256,12 @@ s = snowfake.random()
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="snowfake.html">
+          <a class="next-page" href="ricky.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">snowfake package</div>
+                <div class="title">ricky package</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -306,15 +280,22 @@ s = snowfake.random()
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2022, Agile Scientific
+                &#169; 2022, Agile Scientific | <a href="https://creativecommons.org/licenses/by/4.0/">CC BY</a>
             </div>
-            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and 
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             
           </div>
           <div class="right-details">
             <div class="icons">
+              <a class="muted-link " href="https://code.agilescientific.com" aria-label="Agile">
+                <svg width="200" height="200" version="1.1" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg">
+                <g transform="matrix(3.94 -1.28 1.28 3.94 -906.1 -3676)" style="color-rendering:auto;color:#000000;fill:#14ca29;image-rendering:auto;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;stroke-width:1px;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal">
+                <path d="m-46.98 936.1q3.515-1.622 6.705-3.244t5.083-2.379 3.028-0.757q1.893 0 3.244 1.298 1.406 1.244 1.406 3.136 0 1.081-0.7029 2.271-0.6489 1.136-1.406 1.46-6.975 2.758-15.36 4.001 1.514 1.406 3.731 3.731t2.325 2.487q0.8111 1.136 2.271 2.812 1.46 1.676 2.001 2.65 0.5948 0.9192 0.5948 2.271 0 1.73-1.298 3.028t-3.352 1.298q-2.055 0-4.65-3.19-2.541-3.19-6.597-11.46-4.109 7.462-5.515 9.841t-2.704 3.623q-1.298 1.19-2.974 1.19-2.001 0-3.352-1.352-1.298-1.406-1.298-2.974 0-1.46 0.5407-2.217 4.975-6.759 10.38-11.73-4.542-0.7029-8.111-1.568t-7.57-2.541q-0.6489-0.3244-1.298-1.46-0.5948-1.19-0.5948-2.163 0-1.893 1.352-3.136 1.406-1.298 3.19-1.298 1.298 0 3.244 0.8111 1.947 0.757 4.921 2.271 3.028 1.46 6.867 3.298-0.7029-3.407-1.19-7.786-0.4326-4.434-0.4326-6.056 0-2.001 1.244-3.407 1.298-1.46 3.298-1.46 1.947 0 3.19 1.46 1.298 1.406 1.298 3.785 0 0.6489-0.2163 2.595-0.1622 1.893-0.5407 4.65-0.3244 2.704-0.757 6.218z" style="fill:#14ca29"/>
+                </g>
+                </svg>
+            </a>
               
             </div>
           </div>
@@ -334,7 +315,7 @@ s = snowfake.random()
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">snowfake</a><ul>
+<li><a class="reference internal" href="#">ricky</a><ul>
 <li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#documentation">Documentation</a></li>
 <li><a class="reference internal" href="#example">Example</a></li>
