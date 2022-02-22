@@ -1,5 +1,6 @@
-from .snowfake import Snowfake
-from .snowfake import random
+from .wavelets import ricker, sinc, cosine, gabor
+from .xarray import WaveletAccessor
+
 
 from pkg_resources import get_distribution, DistributionNotFound
 try:

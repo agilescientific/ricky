@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: snowfake
+title: ricky
 version: 0.1
 message: Please use this information to cite this work.
 type: software
@@ -9,4 +9,10 @@ authors:
     email: matt@agilescientific.com
     affiliation: Agile Scientific
     orcid: 'https://orcid.org/0000-0002-4054-8295'
-date-released: 2021-11-28
+  - given-names: Evan
+    family-names: Bianco
+    email: evan@agilescientific.com
+    affiliation: Agile Scientific
+  - given-names: Ben
+    family-names: Bougher
+date-released: 2022-02-16

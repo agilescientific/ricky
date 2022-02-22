@@ -4,7 +4,7 @@
 
 There are several important ways you can help; here are some examples:
 
-- Submitting bug reports and feature requests: see [Issues](https://github.com/agile-geoscience/snowfake/issues).
+- Submitting bug reports and feature requests: see [Issues](https://github.com/agile-geoscience/ricky/issues).
 - Proposing code for bug fixes and new features, then [making a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 - Fixing typos and generally improving the documentation.
 - Writing tutorials, examples, and how-to documents.

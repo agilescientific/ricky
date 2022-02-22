@@ -1,66 +1,36 @@
-# snowfake
+# ricky
 
-[![Python package](https://github.com/agile-geoscience/snowfake/actions/workflows/python-package.yml/badge.svg)](https://github.com/agile-geoscience/snowfake/actions/workflows/python-package.yml)
-[![Build docs](https://github.com/agile-geoscience/snowfake/actions/workflows/sphinx_docs.yml/badge.svg)](https://github.com/agile-geoscience/snowfake/actions/workflows/sphinx_docs.yml)
+[![Python package](https://github.com/agile-geoscience/ricky/actions/workflows/python-package.yml/badge.svg)](https://github.com/agile-geoscience/ricky/actions/workflows/python-package.yml)
+[![Build docs](https://github.com/agile-geoscience/ricky/actions/workflows/sphinx_docs.yml/badge.svg)](https://github.com/agile-geoscience/ricky/actions/workflows/sphinx_docs.yml)
 
-[![PyPI version](https://img.shields.io/pypi/v/snowfake.svg)](https://pypi.org/project/snowfake//)
-[![PyPI versions](https://img.shields.io/pypi/pyversions/snowfake.svg)](https://pypi.org/project/snowfake//)
-[![PyPI license](https://img.shields.io/pypi/l/snowfake.svg)](https://pypi.org/project/snowfake/)
+[![PyPI version](https://img.shields.io/pypi/v/ricky.svg)](https://pypi.org/project/ricky//)
+[![PyPI versions](https://img.shields.io/pypi/pyversions/ricky.svg)](https://pypi.org/project/ricky//)
+[![PyPI license](https://img.shields.io/pypi/l/ricky.svg)](https://pypi.org/project/ricky/)
 
+Popular, and unpopular, wavelets for seismic geophysics. All the wavelets!
 
-Make Gravner-Griffeath "snowfakes"! This code implements:
-
-> Janko Gravner, David Griffeath (2008). Modeling snow crystal growth II: A mesoscopic lattice map with plausible dynamics. _Physica D: Nonlinear Phenomena_ **237** (3), p 385-404. [DOI: 10.1016/j.physd.2007.09.008](https://doi.org/10.1016/j.physd.2007.09.008).
-
-![Snowfakes](https://www.dropbox.com/s/8mquyaiumdiuwwf/snowfakes.png?raw=1)
 
 ## Installation
 
-You can install this package with `pip` (be careful not to type "snowflake"):
+You can install this package with `pip`:
 
-    pip install snowfake
+    pip install ricky
 
-Installing `scikit-image` allows you to use a different affine transformation, but I haven't figured out yet if it's better or not. 
-
-    pip install snowfake[skimage]
+Ricky depends on `xarray`.
 
 
 ## Documentation
 
-Read [the documentation](https://code.agilescientific.com/snowfake)
+Read [the documentation](https://code.agilescientific.com/ricky)
 
 
 ## Example
 
-You can produce a random snowfake with:
+You can produce a Ricker wavelet with:
 
-    import snowfake
-    s = snowfake.random()
-
-This code produces the crystal in Figure 5b of the Gravner & Griffeath (2008):
-
-```python
-from snowfake import Snowfake
-
-params =  {
-    'ρ': 0.35,  # or 'rho': 0.35 if you prefer...
-    'β': 1.4,
-    'α': 0.001,
-    'θ': 0.015,
-    'κ': 0.05,
-    'μ': 0.015,
-    'γ': 0.01,
-    'σ': 0.00005,
-    'random': False,
-}
-s = Snowfake(size=801, **params)
-s.grow()
-s.plot()
-```
-
-The various physical parameter arrays are available as `s.a` (attachment flag), `s.b` (boundary mass), `s.c` (the crystal itself) and `s.d` (the vapour). The arrays exist on hexgrids; you can rectify them with, for example, `s.rectify('c')`.
-
-The parameter `σ` (note that you can also spell out `sigma` if you prefer) can be a 1D array with one sample per epoch. This will vary the vapour density `ρ` through _time_. The parameter `ρ` can be a 2D array of shape `(size, size)`; this will vary the initial vapour density through _space_.
+    import ricky
+    w = ricky.ricker(duration=0.256, dt=0.002, f=25)
+    w.plot()
 
 
 ## Testing
@@ -72,13 +42,13 @@ You can run the tests (requires `pytest` and `pytest-cov`) with
 
 ## Building
 
-This repo uses PEP 517-style packaging. [Read more about this](https://setuptools.pypa.io/en/latest/build_meta.html) and [about Python packaging in general](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
+This repo uses PEP 518-style packaging. [Read more about this](https://setuptools.pypa.io/en/latest/build_meta.html) and [about Python packaging in general](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
 
 Building the project requires `build`, so first:
 
     pip install build
 
-Then to build `snowfake` locally:
+Then to build `ricky` locally:
 
     python -m build
 
