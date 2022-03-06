@@ -3,7 +3,7 @@
 .. container:: noclass
    :name: forkongithub
 
-   `Fork on GitHub <https://github.com/agile-geoscience/ricky>`_
+   `Fork on GitHub <https://github.com/agilescientific/ricky>`_
 
 
 ricky: All the wavelets
@@ -45,8 +45,8 @@ Indices and tables
     :hidden:
 
     PyPI releases <https://pypi.org/project/ricky/>
-    Code in GitHub <https://github.com/agile-geoscience/ricky>
-    Issue tracker <https://github.com/agile-geoscience/ricky/issues>
+    Code in GitHub <https://github.com/agilescientific/ricky>
+    Issue tracker <https://github.com/agilescientific/ricky/issues>
     Community guidelines <https://code.agilescientific.com/community>
     Agile's software <https://code.agilescientific.com>
     Agile's website <https://www.agilescientific.com>
