@@ -1,7 +1,7 @@
 # ricky
 
-[![Python package](https://github.com/agile-geoscience/ricky/actions/workflows/python-package.yml/badge.svg)](https://github.com/agile-geoscience/ricky/actions/workflows/python-package.yml)
-[![Build docs](https://github.com/agile-geoscience/ricky/actions/workflows/sphinx_docs.yml/badge.svg)](https://github.com/agile-geoscience/ricky/actions/workflows/sphinx_docs.yml)
+[![Python package](https://github.com/agilescientific/ricky/actions/workflows/python-package.yml/badge.svg)](https://github.com/agilescientific/ricky/actions/workflows/python-package.yml)
+[![Build docs](https://github.com/agilescientific/ricky/actions/workflows/sphinx_docs.yml/badge.svg)](https://github.com/agilescientific/ricky/actions/workflows/sphinx_docs.yml)
 
 [![PyPI version](https://img.shields.io/pypi/v/ricky.svg)](https://pypi.org/project/ricky//)
 [![PyPI versions](https://img.shields.io/pypi/pyversions/ricky.svg)](https://pypi.org/project/ricky//)

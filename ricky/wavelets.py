@@ -40,9 +40,16 @@ def _wrap_xarray(t, f, w, attrs):
     Returns:
         xarray.DataArray. The wavelet.
     """
+    nw, fw = f.shape  # nw: number of wavelets, fw: frequencies per wavelet
+
     f_ = xr.DataArray(np.squeeze(f, axis=1), dims=['frequency'], attrs={'units': 'Hz'})
     t_ = xr.DataArray(t, dims=['time'], attrs={'units': 's'})
-    w_ = xr.DataArray(w, name='amplitude', dims=['frequency', 'time'], coords=[f_, t_])
+
+    if nw == 1:
+        w_ = xr.DataArray(w, dims=['time'], coords=[t_])
+        attrs.update({'frequency': f_})
+    elif f_.shape[-1] == 1:
+        w_ = xr.DataArray(w, name='amplitude', dims=['frequency', 'time'], coords=[f_, t_])
     w_ = w_.assign_attrs(attrs)
     return w_
 
