@@ -1,4 +1,4 @@
-from .wavelets import ricker, sinc, cosine, gabor
+from .wavelets import ricker, sinc, cosine, gabor, berlage, generalized
 from .xarray import WaveletAccessor
 
 
